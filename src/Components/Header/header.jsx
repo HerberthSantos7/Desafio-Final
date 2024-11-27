@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Inicio from '../../pages/inicio/Inicio';
+import Inicio from '../../pages/inicio/inicio';
 import LivrosDoados from '../../pages/livrosDoados/LivrosDoados';
 import QueroDoar from '../../pages/queroDoar/QueroDoar';
 import logo from '../../assets/logo.png';

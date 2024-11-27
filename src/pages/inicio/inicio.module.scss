@@ -3,4 +3,22 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 85vh;
+    display: flex;
+    align-items: center;
+    h2{
+        color: white;
+        width: 19vw;
+        height: 18vh;
+        font-size: 25px;
+        margin-left: 12vw;
+    }
+}
+
+.boxCards{
+    border: solid 2px red;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
