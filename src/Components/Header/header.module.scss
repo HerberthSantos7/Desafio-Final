@@ -21,9 +21,9 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      font-size: 17px;
       a{
         color: white;
-        font-size: 17px;
       }
     }
   }
@@ -35,8 +35,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: solid 2px white;
     border-radius: 15px;
     input{
+      width: 12vw;
       background-color: transparent;
       outline: none;
       border: none;
@@ -44,6 +46,63 @@ header {
       font-size: 15px;
       &::placeholder{
         color: white;
+      }
+    }
+  }
+
+  @media(max-Width: 1080px) {
+    
+    .boxLogo{
+        border: solid 2px orange;
+        width: 28vw;
+        h1{
+          font-size: 1.4wv;
+        }
+        img{
+          width: 5vw;
+        }
+    }
+
+    .boxMenu{
+      border: solid 2px red;
+      ul{
+        font-size: 1.7vw;  
+      }
+    }
+
+    .boxInput{
+      width: 18vw;
+      input{
+        &::placeholder{
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 760px){
+    header{
+      height: 25vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .boxInput{
+      display: none;
+    }
+    .boxLogo{
+      width: 80%;
+      h1{
+        font-size: 25px;
+      }
+      img{
+        width: 60px;
+      }
+    }
+    .boxMenu{
+      width: 100%;
+      ul{
+        justify-content: space-evenly;
+        font-size: 22px;
       }
     }
   }

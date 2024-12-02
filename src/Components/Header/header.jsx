@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Inicio from '../../pages/inicio/inicio';
-import LivrosDoados from '../../pages/livrosDoados/LivrosDoados';
+import LivrosDoados from '../../pages/livrosDoados/livrosDoados';
 import QueroDoar from '../../pages/queroDoar/QueroDoar';
 import logo from '../../assets/logo.png';
 import lupa from '../../assets/lupa.png';

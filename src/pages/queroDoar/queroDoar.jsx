@@ -4,7 +4,7 @@ import s from './queroDoar.module.scss'
 export default function QueroDoar() {
     return (
       <section className={s.principal}>
-        <section className={s.boxForm}>
+        <section className={s.container}>
           <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
 
           <form action="">
@@ -16,7 +16,7 @@ export default function QueroDoar() {
             <input type="text" placeholder='Categoria' />              
             <input type="text" placeholder='Autor' />              
             <input type="text" placeholder='Link da Imagem' />              
-            <button>Doar</button>
+            <input type="submit" value="Doar"/>
           </form>
         </section>
       </section>
