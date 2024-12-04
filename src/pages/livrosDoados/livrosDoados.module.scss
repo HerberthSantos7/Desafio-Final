@@ -3,15 +3,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.cards{
+.boxCard{
     height: 60vh;
     width: 85vw;
+    display: flex;
+    justify-content: space-evenly;
     article{
-        height: 30vh;
-        width: 15vw;
+        border: solid 2px #005695;
+        height: 250px;
+        width: 230px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,3 +22,4 @@
         border-radius: 15px;
     }
 }
+

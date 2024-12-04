@@ -2,13 +2,11 @@
     background-image: url('../../assets/banner.png');
     background-repeat: no-repeat;
     background-size: contain;
-    border: solid 2px red;
     height: 85vh;
     display: flex;
     align-items: center;
     h2{
         color: white;
-        border: solid 2px yellow;
         width: 24vw;
         height: 18vh;
         font-size: 35px;
@@ -16,16 +14,16 @@
     }
 }
 
-.queroDoar{
+.devoDoar{
     height: 75vh;
 
     div{
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    padding-left: 8vw;
-    font-size: 25px;
-    color: rgba(0, 86, 149, 1);
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        padding-left: 8vw;
+        font-size: 25px;
+        color: rgba(0, 86, 149, 1);
     }
     
     .boxCards{
@@ -37,7 +35,7 @@
         article{
             background-color: rgba(1, 87, 148, 0.3);
             height: 38vh;
-            width: 15vw;
+            width: 18vw;
             display: flex;
             flex-direction: column;
             align-items:center;
@@ -45,7 +43,7 @@
             border-radius: 10px;
             p{
                 text-align: center;
-                font-size: 22px;
+                font-size: 18px;
             }
         }
     }
@@ -55,11 +53,71 @@
     .banner{
         background-size: cover;
     }
+    .devoDoar{
+        .boxCards{
+            article{
+                p{
+                    font-size: 1.4vw;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 860px){
     .banner{
-        background-image: url('../../assets/inicioMobile.png');
+        // background-image: url('../../assets/inicioMobile.png');
+        background-position: center;
+    }
+    
+   .devoDoar{
+        .boxCards{
+            article{
+                    width: 20%;
+                    gap: 10px;
+                    p{
+                        font-size: 1.6vw;
+                    }
+                }
+        }
+   }
+    
+}
+
+@media(max-width: 760px){
+    .banner{
+        h2{
+            width: 80%;
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .devoDoar{
+        height: auto;
+        div{
+            justify-content: center;
+            padding-left: 0;
+        }
         
+        .boxCards{
+            flex-wrap: wrap;
+            gap: 10px;
+            height: 80vh;
+            article{
+                width: 250px;
+                height: 38vh;
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 510px){
+    .devoDoar{
+        .boxCards{
+            height: 160vh;
+        }
     }
 }

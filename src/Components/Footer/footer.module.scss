@@ -29,3 +29,18 @@ footer {
     align-items: center;
     
 }
+
+@media(max-width: 1000px){
+    .boxSocial{
+        nav{
+            width: 250px;
+        }
+    }
+}
+
+@media(max-width: 510px){
+    .boxSocial{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

@@ -11,12 +11,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    h2{
+        text-align: center;
+    }
 }
 
 form{
     border: solid 2px rgba(0, 86, 149, 1);
-    height: 60vh;
-    width: 25vw;
+    height: 400px;
+    width: 330px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -30,8 +33,8 @@ form{
         color:rgba(0, 86, 149, 1);
     }
     input{
-        width: 22vw;
-        height: 5vh;
+        width: 250px;
+        height: 30px;
         border: solid 2px rgba(0, 86, 149, 1);
         border-radius: 10px;
         outline: none;
@@ -42,7 +45,8 @@ form{
     }
     input:nth-child(6){
         background-color: rgba(0, 86, 149, 1);
-        width: 10vw;
+        width: 100px;
+        height: 35px;
         padding-left: 0;
         color: white;
         font-size: 15px;
