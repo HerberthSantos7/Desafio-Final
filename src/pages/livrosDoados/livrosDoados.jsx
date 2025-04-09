@@ -1,7 +1,25 @@
 import s from './livrosDoados.module.scss'
 import protagonista from '../../assets/protagonista.png'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
 
-export default function LivrosDoados() {
+export default function Doados() {
+
+  const [livros, setLivros] = useState([])
+
+  const getLivros = async () => {
+      try {
+          const response = await axios.get("https://api-livros-vnw-k1g3.onrender.com/livros")
+          setLivros(response.data)
+      } catch (error) {
+          console.error("Erro ao buscar livros:", error)
+      }
+  }
+
+  useEffect(() => {
+      getLivros()
+  }, [])
+
     return (
       <section className={s.boxDoados}>
         <h2>LIVROS DOADOS</h2>
@@ -16,4 +34,3 @@ export default function LivrosDoados() {
       </section>
     );
   }
-  
