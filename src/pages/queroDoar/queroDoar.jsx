@@ -52,30 +52,24 @@ export default function QueroDoar() {
   }
 
 
-    return (
-      <section className={s.principal}>
-
-        <section className={s.container}>
-        
-          <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
-
-          <form action="">
-            
-            <div>
-              <img src={livro} alt="" />
-              <h3>Informações do Livro</h3>
-            </div>
-
-            <input type="text" placeholder='Titulo'/>              
-            <input type="text" placeholder='Categoria' />              
-            <input type="text" placeholder='Autor' />              
-            <input type="text" placeholder='Link da Imagem' />              
-            <input type="submit" value="Doar"/>
-          </form>
-        
+  return(
+    <section className={S.principal}> {/* Contêiner principal estilizado */}
+        <section className={S.container}> {/* Contêiner interno */}
+            <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
+            <form onSubmit={(e)=> e.preventDefault()}> {/* Previne o comportamento padrão do formulário */}
+                <div>
+                    <img src={livro} alt="" /> {/* Exibe a imagem do livro */}
+                    <h3>Informações do Livro</h3>
+                </div>
+                {/* Campos do formulário */}
+                <input type="text" placeholder='Titulo' onChange={capturaTitulo} value={titulo} />
+                <input type="text" placeholder='Categoria' onChange={capturaCategoria} value={categoria} />
+                <input type="text" placeholder='Autor' onChange={capturaAutor} value={autor}/>
+                <input type="text" placeholder='Link da Imagem' onChange={capturaImagem} value={imagem_url} />
+                <input className={S.doar} type="submit" value="Doar" onClick={enviarDados} /> {/* Botão de submissão */}
+            </form>
         </section>
-      
-      </section>
-    );
-  }
+    </section>
+  )
+}
   

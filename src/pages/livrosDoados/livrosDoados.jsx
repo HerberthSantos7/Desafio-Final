@@ -20,17 +20,23 @@ export default function Doados() {
       getLivros()
   }, [])
 
-    return (
-      <section className={s.boxDoados}>
-        <h2>LIVROS DOADOS</h2>
-        <section className={s.boxCard}>
-          <article>
-            <img src={protagonista} alt="" />
-            <h3>O Protagonista</h3>
-            <p>Susanne Andrade</p>
-            <p>Ficção</p>
-          </article>
+  return (
+    <section className={S.boxDoados}>
+        <h2>Livros Doados</h2>
+        <section className={S.boxBooks}>
+            {/* Livro fixo */}
+           
+            
+            {/* Renderização dos livros recebidos da API */}
+            {livros.map((item) => (
+                <article key={item.id}>
+                    <img src={item.imagem_url} alt={item.titulo} />
+                    <h3>{item.titulo}</h3>
+                    <p>{item.autor}</p>
+                    <p>{item.categoria}</p>
+                </article>
+            ))}
         </section>
-      </section>
-    );
-  }
+    </section>
+  )
+}
