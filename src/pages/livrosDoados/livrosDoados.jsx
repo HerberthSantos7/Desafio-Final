@@ -3,7 +3,7 @@ import protagonista from '../../assets/protagonista.png'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-export default function Doados() {
+export default function livrosDoados() {
 
   const [livros, setLivros] = useState([])
 

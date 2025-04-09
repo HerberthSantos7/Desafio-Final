@@ -3,7 +3,7 @@ import s from './queroDoar.module.scss'
 import axios from 'axios'
 import {useState} from 'react' 
 
-export default function QueroDoar() {
+export default function queroDoar() {
 
     const [titulo, setTitulo] = useState("")
     const [categoria, setCategoria] = useState("")
